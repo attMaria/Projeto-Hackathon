@@ -161,7 +161,7 @@ public class JopAndButtons extends javax.swing.JFrame {
         //STRING PATH
         //path nada mais é que o local que a arquivo/pasta está alocado
         //INT WIDTH & INT HEIGHT
-        //os dois nada mais são do que Largura e Altura
+        //os dois nada mais são do que Largura e Altura.
     }
 
     /**
