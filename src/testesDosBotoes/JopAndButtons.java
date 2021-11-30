@@ -5,12 +5,15 @@
  */
 package testesDosBotoes;
 
+import jopAlternativo.JopAlternativo;
 import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util;
 import java.awt.Color;
+import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
+import jopAlternativo.JopAlternativoClasse;
 
 /**
  *
@@ -19,7 +22,7 @@ import javax.swing.UIManager;
 public class JopAndButtons extends javax.swing.JFrame {
 
     UIManager UI;
-
+    JopAlternativo jopAlternativo = new JopAlternativo();
     /**
      * Creates new form JopAndButtons
      */
@@ -36,35 +39,14 @@ public class JopAndButtons extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btJopPretoBranco = new javax.swing.JButton();
         btJopPretoBranco2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btJopPretoBranco.setBackground(new java.awt.Color(0, 0, 0));
-        btJopPretoBranco.setForeground(new java.awt.Color(255, 255, 255));
-        btJopPretoBranco.setText("Teste do jop Preto-Branco");
-        btJopPretoBranco.setBorder(null);
-        btJopPretoBranco.setBorderPainted(false);
-        btJopPretoBranco.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btJopPretoBranco.setFocusPainted(false);
-        btJopPretoBranco.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btJopPretoBrancoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btJopPretoBrancoMouseExited(evt);
-            }
-        });
-        btJopPretoBranco.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btJopPretoBrancoActionPerformed(evt);
-            }
-        });
-
         btJopPretoBranco2.setBackground(new java.awt.Color(0, 0, 0));
         btJopPretoBranco2.setForeground(new java.awt.Color(255, 255, 255));
-        btJopPretoBranco2.setText("Teste do jop Preto-Branco2");
+        btJopPretoBranco2.setText("Teste do jopAlternativo");
         btJopPretoBranco2.setBorderPainted(false);
         btJopPretoBranco2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btJopPretoBranco2.setFocusPainted(false);
@@ -82,25 +64,30 @@ public class JopAndButtons extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("resultado do jop");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(179, 179, 179)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btJopPretoBranco2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btJopPretoBranco, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(323, Short.MAX_VALUE))
+                .addComponent(btJopPretoBranco2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addGap(0, 385, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(126, 126, 126)
-                .addComponent(btJopPretoBranco, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btJopPretoBranco2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
+                    .addComponent(btJopPretoBranco2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 334, Short.MAX_VALUE))
         );
 
         pack();
@@ -116,53 +103,25 @@ public class JopAndButtons extends javax.swing.JFrame {
         btJopPretoBranco2.setForeground(Color.BLACK);
     }//GEN-LAST:event_btJopPretoBranco2MouseEntered
 
-    private void btJopPretoBrancoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btJopPretoBrancoMouseExited
-        btJopPretoBranco.setBackground(Color.BLACK);
-        btJopPretoBranco.setForeground(Color.WHITE);
-    }//GEN-LAST:event_btJopPretoBrancoMouseExited
-
-    private void btJopPretoBrancoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btJopPretoBrancoMouseEntered
-        btJopPretoBranco.setBackground(Color.WHITE);
-        btJopPretoBranco.setForeground(Color.BLACK);
-    }//GEN-LAST:event_btJopPretoBrancoMouseEntered
-
-    private void btJopPretoBrancoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btJopPretoBrancoActionPerformed
-        UI = null;
-        UI.put("OptionPane.background", null);
-        UI.put("Panel.background", null);
-
-        Object[] options = {"Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"};
-        JOptionPane.showOptionDialog(null,
-                "Titulo",
-                "Titulo superior",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.INFORMATION_MESSAGE,
-                icone("/resources/light-bulb.png", 40, 40),
-                options,
-                options[0]);
-
-        //Opções
-        //O número de opções pode ser variavel.
-        //As opções retornam: Opção 1 retorna 0, Opção 2 retorna 1 e assim por diante.
-        //Caso o X seja selecionado será retornado -1.
-
-    }//GEN-LAST:event_btJopPretoBrancoActionPerformed
-
     private void btJopPretoBranco2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btJopPretoBranco2ActionPerformed
-        // TODO add your handling code here:
+        jopAlternativo.setVisible(true);
     }//GEN-LAST:event_btJopPretoBranco2ActionPerformed
 
-    public Icon icone(String path, int width, int height) {
-        Icon img = new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage()
-                .getScaledInstance(width, height, java.awt.Image.SCALE_SMOOTH));
-
-        return img;
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(null, jopAlternativo.getJopAlternativoClasse().getNumero());
+    }//GEN-LAST:event_jButton1ActionPerformed
+//
+//    public Icon icone(String path, int width, int height) {
+//        Icon img = new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage()
+//                .getScaledInstance(width, height, java.awt.Image.SCALE_SMOOTH));
+//
+//        return img;
 
         //STRING PATH
         //path nada mais é que o local que a arquivo/pasta está alocado
         //INT WIDTH & INT HEIGHT
         //os dois nada mais são do que Largura e Altura.
-    }
+//    }
 
     /**
      * @param args the command line arguments
@@ -201,7 +160,7 @@ public class JopAndButtons extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btJopPretoBranco;
     private javax.swing.JButton btJopPretoBranco2;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
