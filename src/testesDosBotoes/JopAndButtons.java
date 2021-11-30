@@ -6,14 +6,8 @@
 package testesDosBotoes;
 
 import jopAlternativo.JopAlternativo;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util;
 import java.awt.Color;
-import java.awt.Font;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import javax.swing.UIManager;
-import jopAlternativo.JopAlternativoClasse;
 
 /**
  *
@@ -21,7 +15,6 @@ import jopAlternativo.JopAlternativoClasse;
  */
 public class JopAndButtons extends javax.swing.JFrame {
 
-    UIManager UI;
     JopAlternativo jopAlternativo = new JopAlternativo();
     /**
      * Creates new form JopAndButtons
