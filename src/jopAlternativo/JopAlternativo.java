@@ -4,13 +4,12 @@
  * and open the template in the editor.
  */
 package jopAlternativo;
-import jopAlternativo.JopAlternativoClasse;
 /**
  *
  * @author harisson.castro
  */
 public class JopAlternativo extends javax.swing.JFrame {
-JopAlternativoClasse jopAlternativoClasse = new JopAlternativoClasse();
+int numero;
     /**
      * Creates new form jop
      */
@@ -155,16 +154,17 @@ JopAlternativoClasse jopAlternativoClasse = new JopAlternativoClasse();
         dispose();
     }//GEN-LAST:event_jLabel2MouseClicked
     private void alocar(int numero){
-        jopAlternativoClasse.setNumero(numero);
+        setNumero(numero);
     }
 
-    public JopAlternativoClasse getJopAlternativoClasse() {
-        return jopAlternativoClasse;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setJopAlternativoClasse(JopAlternativoClasse jopAlternativoClasse) {
-        this.jopAlternativoClasse = jopAlternativoClasse;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
+
     
     /**
      * @param args the command line arguments
