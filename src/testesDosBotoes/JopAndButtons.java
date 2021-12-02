@@ -7,6 +7,8 @@ package testesDosBotoes;
 
 import jopAlternativo.JopAlternativo;
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,6 +18,7 @@ import javax.swing.JOptionPane;
 public class JopAndButtons extends javax.swing.JFrame {
 
     JopAlternativo jopAlternativo = new JopAlternativo();
+
     /**
      * Creates new form JopAndButtons
      */
@@ -32,35 +35,35 @@ public class JopAndButtons extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btJopPretoBranco2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        lbTesteDoJop = new javax.swing.JButton();
+        lbResultadoDoJop = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btJopPretoBranco2.setBackground(new java.awt.Color(0, 0, 0));
-        btJopPretoBranco2.setForeground(new java.awt.Color(255, 255, 255));
-        btJopPretoBranco2.setText("Teste do jopAlternativo");
-        btJopPretoBranco2.setBorderPainted(false);
-        btJopPretoBranco2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btJopPretoBranco2.setFocusPainted(false);
-        btJopPretoBranco2.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbTesteDoJop.setBackground(new java.awt.Color(0, 0, 0));
+        lbTesteDoJop.setForeground(new java.awt.Color(255, 255, 255));
+        lbTesteDoJop.setText("Teste do jopAlternativo");
+        lbTesteDoJop.setBorderPainted(false);
+        lbTesteDoJop.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lbTesteDoJop.setFocusPainted(false);
+        lbTesteDoJop.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btJopPretoBranco2MouseEntered(evt);
+                lbTesteDoJopMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btJopPretoBranco2MouseExited(evt);
+                lbTesteDoJopMouseExited(evt);
             }
         });
-        btJopPretoBranco2.addActionListener(new java.awt.event.ActionListener() {
+        lbTesteDoJop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btJopPretoBranco2ActionPerformed(evt);
+                lbTesteDoJopActionPerformed(evt);
             }
         });
 
-        jButton1.setText("resultado do jop");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        lbResultadoDoJop.setText("resultado do jop");
+        lbResultadoDoJop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                lbResultadoDoJopActionPerformed(evt);
             }
         });
 
@@ -69,40 +72,81 @@ public class JopAndButtons extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(btJopPretoBranco2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbTesteDoJop, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(lbResultadoDoJop)
                 .addGap(0, 385, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(btJopPretoBranco2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbResultadoDoJop)
+                    .addComponent(lbTesteDoJop, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 334, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btJopPretoBranco2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btJopPretoBranco2MouseExited
-        btJopPretoBranco2.setBackground(Color.BLACK);
-        btJopPretoBranco2.setForeground(Color.WHITE);
-    }//GEN-LAST:event_btJopPretoBranco2MouseExited
+    private void lbTesteDoJopMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbTesteDoJopMouseExited
+        lbTesteDoJop.setBackground(Color.BLACK);
+        lbTesteDoJop.setForeground(Color.WHITE);
+    }//GEN-LAST:event_lbTesteDoJopMouseExited
 
-    private void btJopPretoBranco2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btJopPretoBranco2MouseEntered
-        btJopPretoBranco2.setBackground(Color.WHITE);
-        btJopPretoBranco2.setForeground(Color.BLACK);
-    }//GEN-LAST:event_btJopPretoBranco2MouseEntered
+    private void lbTesteDoJopMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbTesteDoJopMouseEntered
+        lbTesteDoJop.setBackground(Color.WHITE);
+        lbTesteDoJop.setForeground(Color.BLACK);
+    }//GEN-LAST:event_lbTesteDoJopMouseEntered
 
-    private void btJopPretoBranco2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btJopPretoBranco2ActionPerformed
-        jopAlternativo.setVisible(true);
-    }//GEN-LAST:event_btJopPretoBranco2ActionPerformed
+    private void lbTesteDoJopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbTesteDoJopActionPerformed
+        jopAlternativoThread();
+    }//GEN-LAST:event_lbTesteDoJopActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void lbResultadoDoJopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbResultadoDoJopActionPerformed
         JOptionPane.showMessageDialog(null, jopAlternativo.getNumero());
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_lbResultadoDoJopActionPerformed
+    private void jopAlternativoThread() {
+        jopAlternativo.setVisible(true);
+        new Thread() {
+            @Override
+            public void run() {
+                while (jopAlternativo.isVisible()) {
+                    desabilitadorDeBotoes(false);
+                    try {
+                        sleep(1000);
+                    } catch (InterruptedException ex) {
+                        System.out.println(ex.getMessage());
+                    }
+                }
+                desabilitadorDeBotoes(true);
+                resultadoDoJopAlternativo();
+            }
+        }.start();
+
+    }
+
+    private void resultadoDoJopAlternativo() {
+        switch (jopAlternativo.getNumero()) {
+            case 1:
+                System.out.println(jopAlternativo.getNumero());
+                break;
+            case 2:
+                System.out.println(jopAlternativo.getNumero());
+                break;
+            case 3:
+                System.out.println(jopAlternativo.getNumero());
+                break;
+            case 4:
+                System.out.println(jopAlternativo.getNumero());
+                break;
+        }
+    }
+
+    private void desabilitadorDeBotoes(boolean estado) {
+        lbTesteDoJop.setEnabled(estado);
+        lbResultadoDoJop.setEnabled(estado);
+    }
 //
 //    public Icon icone(String path, int width, int height) {
 //        Icon img = new ImageIcon(new ImageIcon(getClass().getResource(path)).getImage()
@@ -110,10 +154,10 @@ public class JopAndButtons extends javax.swing.JFrame {
 //
 //        return img;
 
-        //STRING PATH
-        //path nada mais é que o local que a arquivo/pasta está alocado
-        //INT WIDTH & INT HEIGHT
-        //os dois nada mais são do que Largura e Altura.
+    //STRING PATH
+    //path nada mais é que o local que a arquivo/pasta está alocado
+    //INT WIDTH & INT HEIGHT
+    //os dois nada mais são do que Largura e Altura.
 //    }
 
     /**
@@ -153,7 +197,7 @@ public class JopAndButtons extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btJopPretoBranco2;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton lbResultadoDoJop;
+    private javax.swing.JButton lbTesteDoJop;
     // End of variables declaration//GEN-END:variables
 }
